@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import 'normalize.css';
+import React from 'react';
+import ReactGA from 'react-ga4';
 import './App.css';
+import { ANALYTICS_ID } from './config';
+import { ChannelsPage } from './views/ChannelsPage/ChannelsPage';
+
+if (ANALYTICS_ID) {
+  ReactGA.initialize('G-1SJ3FHLQLL');
+  ReactGA.send('pageview');
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChannelsPage />
     </div>
   );
 }
