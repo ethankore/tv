@@ -16,7 +16,7 @@ const Box = styled.div`
 
   &.fade-out {
     pointer-events: none;
-    transform: scale(0.8);
+    transform: scale(0.7);
     opacity: 0;
   }
 
