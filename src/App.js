@@ -6,7 +6,7 @@ import { ANALYTICS_ID } from './config';
 import { ChannelsPage } from './views/ChannelsPage/ChannelsPage';
 
 if (ANALYTICS_ID) {
-  ReactGA.initialize('G-1SJ3FHLQLL');
+  ReactGA.initialize(ANALYTICS_ID);
   ReactGA.send('pageview');
 }
 
