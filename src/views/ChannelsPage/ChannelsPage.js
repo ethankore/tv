@@ -46,7 +46,6 @@ export const ChannelsPage = () => {
           <ChannelVideo
             onCloseClick={() => onCloseChannel(focusedChannel.name)}
             sourceUrl={focusedChannel.url}
-            type={focusedChannel.type}
           />
         )}
       </FadingBox>
