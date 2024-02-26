@@ -5,7 +5,6 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig((command) => {
   return {
     // https://github.com/vitejs/vite/issues/1973#issuecomment-787571499
-    base: command.mode === "production" ? "/tv/" : "/",
     define: {
       "process.env": {},
     },
