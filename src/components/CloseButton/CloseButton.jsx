@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { ReactComponent as Close } from '../../icons/Close.svg';
+// eslint-disable-next-line import/no-unresolved
+import close from '../../icons/close.svg?react';
 import { SvgIcon } from '../SvgIcon/SvgIcon';
 
 export const CloseButton = ({ color, onClick }) => (
   <Button type="button">
-    <SvgIcon Icon={Close} color={color} onClick={onClick} />
+    <SvgIcon Icon={close} color={color} onClick={onClick} />
   </Button>
 );
 
